@@ -1,0 +1,21 @@
+.inner{
+    display: inline-block;
+}
+.login-btn{
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 24px;
+    gap: 8px;
+
+    position: absolute;
+    width: 162px;
+    height: 40px;
+    left: 215px;
+    top: 511px;
+
+    background: #FF9138;
+
+    box-shadow: 0px 0px 6px #E7E9F2;
+    border-radius: 8px;
+}
