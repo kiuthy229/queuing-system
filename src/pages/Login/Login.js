@@ -1,7 +1,7 @@
-import React, { Fragment } from 'react'
+import React, { Fragment } from 'react';
 import './Login.css'
-import login from "../../images/login_img.png"
-import logo from "../../images/alta_logo.png"
+import login from "../../images/login_img.png";
+import logo from "../../images/alta_logo.png";
 
 const Login = () => {
     return ( <Fragment>
