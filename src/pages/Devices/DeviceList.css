@@ -1,0 +1,146 @@
+.header-txt{
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+
+    color: #FF7506;
+}
+.prev-link{
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 30px;
+
+    color: #7E7D88;
+}
+.this-link{
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 30px;
+
+    color: #FF7506;
+}
+.arrow{
+    width: 0.5%;
+    height: 0.5%;
+    margin: 0 5px 0 5px;
+}
+.filter-fields{
+    display: inline-block;
+    margin: 0 20px 10px 0;
+}
+.active-status-input{
+    background-color: #ffffff;
+    width: 250px;
+    height: 40px;
+}
+.connect-status-input{
+    background-color: #ffffff;
+    width: 250px;
+    height: 40px;
+}
+.search-keyword-input{
+    box-sizing: border-box;
+
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 16px 10px 12px;
+
+    width: 250px;
+    height: 40px;
+
+    background: #FFFFFF;
+
+    border: 1.5px solid #D4D4D7;
+    border-radius: 8px;
+}
+.search-icon{
+    position: relative;
+    top: 6px;
+    left: -35px;
+}
+.search-field{
+    margin: 0 0 0 150px;
+}
+.table-container{
+    position: relative;
+    top: 0px;
+    left: 220px;
+}
+.list_table {
+    width: 100%;
+    height: fit-content;
+}
+table {
+    height: inherit;
+    width: inherit;
+    border-collapse: collapse;
+}
+thead {
+    height: 36px;
+    width: inherit;
+}
+th {
+    background-color: #FF9138;
+    color: #ffffff;
+    font-size: 13px;
+    font-weight: 700;
+    line-height: 24px;
+    padding: 0px 15px 0px 15px;
+}
+th:first-child {
+    border-radius: 15px 0 0 0;
+}
+th:last-child {
+    border-radius: 0 15px 0 0;
+}
+th:not(:last-child) {
+    border-right: 1px solid #ffe3cd;
+}
+tbody tr {
+      height: 36px;
+}
+td {
+    padding-left: 8px;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 21px;
+    padding: 0px 15px 0px 15px;
+}
+
+td.row {
+    height: inherit;
+    width: inherit;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 8px;
+}
+td:not(:last-child) {
+    border-right: 1px solid #ffe3cd;
+}
+tbody:nth-child(even) tr:nth-child(odd) {
+    background-color: #ffffff;
+}
+
+tbody:nth-child(even) tr:nth-child(even) {
+    background-color: #FFF2E7;
+}
+
+tr:last-child td:first-child{
+        border-radius: 0 0 0 15px;
+}
+
+tr:last-child td:last-child {
+        border-radius: 0 0 15px 0;
+}
+
+tr:only-child td:first-child{
+      border-radius: 0 0 0 15px;
+}
+tr:only-child td:last-child {
+      border-radius: 0 0 15px 0;
+}

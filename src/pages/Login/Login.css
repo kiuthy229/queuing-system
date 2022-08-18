@@ -16,27 +16,33 @@
     border-radius: 8px;
     border: 0px;
     position: relative;
-    top: 0px;
+    top: 10px;
     left: 30%;
+  }
+  .login-btn:hover{
+    box-shadow: 0px 0px 6px #aeaeb2;
   }
   
   .login-left{
-    background-color: #F7F7F7;
-    padding: 120px 150px 150px 50px;
+    padding: 0px 0px 0px 50px;
+    justify-content: center;
+    align-items: center;
   }
   .login-right{
     box-sizing: border-box;
-    position: relative;
-    top:30px;
-    left:25%;
-    width: 40%
+    position: absolute;
+    background-color: #ffffff;
+    top:0px;
+    left:35%;
+    width: 65%;
+    height: 100%;
   }
   .login-img{
-    width: 80%;
+    width: 70%;
     height: 80%;
     position: relative;
-    top: 30%;
-    left: -20%;
+    top: 50px;
+    left: 10%;
   }
   .login-input{
     display: flex;
@@ -51,12 +57,16 @@
     border-radius: 8px;
   
   }
+  .input-form{
+    position: relative;
+    top: 130px;
+  }
   .logo{
     position: relative;
-    top: -100px;
-    left: 40%;
+    top: 50px;
+    left: 30%;
   
-    width: 40%;
-    height: 40%;
+    width: 50%;
+    height: 50%;
   }
   
