@@ -55,7 +55,7 @@
 }
 /* sign out button */
 .app__sidebar__sign-out{
-    margin-top: auto;
+    margin-top: 60px;
     height: 60px;
     width: inherit;
     display: flex;

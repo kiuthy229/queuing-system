@@ -1,11 +1,12 @@
 import React, { Fragment, useState } from 'react'
-import Navbar from '../../components/Navbar/Navbar'
+import { useNavigate } from 'react-router-dom'
 import './DeviceList.css'
 import OutlinedInput from '@mui/material/OutlinedInput';
 import MenuItem from '@mui/material/MenuItem';
 import Select, { SelectChangeEvent } from '@mui/material/Select';
-import search from "../../images/search.png"
-import arrow from "../../images/arrow.png"
+import search from "../../../images/search.png"
+import arrow from "../../../images/arrow.png"
+import add from "../../../images/add_icon.png"
 
 const activeStatuses = [
   'Tất cả',
@@ -20,6 +21,7 @@ const connectStatuses = [
 ];
 
 const DeviceList = () => {
+    const navigate = useNavigate();
     const [activeStatus, setActiveStatus] = useState<string>("");
     const [connectStatus, setConnectStatus] = useState<string>("");
 
@@ -32,7 +34,6 @@ const DeviceList = () => {
     };
     return(
         <Fragment>
-            <Navbar/>
             <div className='table-container'>
                 <div className='header'>
                     <p>
@@ -51,10 +52,26 @@ const DeviceList = () => {
                             </div>
                             <Select
                             className='active-status-input'
+                            sx={{
+                                border: "none",
+                                borderRadius: "8px",
+                                "& .MuiSvgIcon-root": {
+                                    color: "orange",
+                                },
+                            }}
                             displayEmpty
                             value={activeStatus}
                             onChange={handleChangeActiveStatus}
                             input={<OutlinedInput />}
+                            MenuProps={{
+                                PaperProps: {
+                                  sx: {
+                                    '& .MuiMenuItem-root:hover': {
+                                            bgcolor: '#FFF2E7',
+                                    },
+                                  },
+                                },
+                            }}
                             renderValue={(selected) => {
                                 return selected;
                             }}
@@ -76,10 +93,26 @@ const DeviceList = () => {
                             </div>
                             <Select
                             className='connect-status-input'
+                            sx={{
+                                border: "none",
+                                borderRadius: "8px",
+                                "& .MuiSvgIcon-root": {
+                                    color: "orange",
+                                },
+                            }}
                             displayEmpty
                             value={connectStatus}
                             onChange={handleChangeConnectStatus}
                             input={<OutlinedInput />}
+                            MenuProps={{
+                                PaperProps: {
+                                  sx: {
+                                    '& .MuiMenuItem-root:hover': {
+                                            bgcolor: '#FFF2E7',
+                                    },
+                                  },
+                                },
+                            }}
                             renderValue={(selected) => {
                                 return selected;
                             }}
@@ -161,6 +194,12 @@ const DeviceList = () => {
                         </tr> 
                     </tbody>
                 </table>
+                <div>
+                        <button className='add-device' onClick={()=>navigate('/device/add')}>
+                        <img src={add}/>
+                            Thêm Thiết bị
+                        </button>
+                </div>
             </div>
         </Fragment>
     )

@@ -6,17 +6,17 @@ import signout from "../../images/logout.png"
 import { ReactComponent as Dashboard} from "../../images/dashboard_icon.svg"
 import { ReactComponent as Device} from "../../images/device_icon.svg"
 import { ReactComponent as Service} from "../../images/service_icon.svg"
-import { ReactComponent as Level} from "../../images/level_icon.svg"
+import { ReactComponent as Queue} from "../../images/queue_icon.svg"
 import { ReactComponent as Report} from "../../images/report_icon.svg"
 import { ReactComponent as Setting} from "../../images/setting_icon.svg"
 
 const items = [
-    { name: 'Dashboard', icon: <Dashboard/>, path: 'panel' },
-    { name: 'Thiết bị', icon: <Device/>, path: 'device/list' },
-    { name: 'Dịch vụ', icon: <Service/>, path: 'service/list' },
-    { name: 'Cấp số', icon: <Level/>, path: 'queue/list' },
-    { name: 'Báo cáo', icon: <Report/>, path: 'report/create'},
-    { name: 'Cài đặt hệ thống', icon: <Setting/>, path: 'system/accounts' },
+    { name: 'Dashboard', icon: <Dashboard/>, path: '/dashboard' },
+    { name: 'Thiết bị', icon: <Device/>, path: '/device/list' },
+    { name: 'Dịch vụ', icon: <Service/>, path: '/service/list' },
+    { name: 'Cấp số', icon: <Queue/>, path: '/queue/list' },
+    { name: 'Báo cáo', icon: <Report/>, path: '/report/create'},
+    { name: 'Cài đặt hệ thống', icon: <Setting/>, path: '/system/accounts' },
   ];
 const Navbar = () => {
     const navigate = useNavigate();
@@ -31,7 +31,7 @@ const Navbar = () => {
     return (
       <div className='app__sidebar'>
         <div className='app__sidebar__logo'>
-            <img style={{width:"100px", height:"90px"}} src={logo}/>
+            <img style={{width:"100px", height:"90px"}} src={logo} onClick={() => {navigate('/')}}/>
         </div>
         <div className='app__sidebar__items-container'>
           {items.map((item) => {

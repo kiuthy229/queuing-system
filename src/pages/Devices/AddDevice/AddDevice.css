@@ -1,0 +1,12 @@
+.add-device-form{
+    position: relative;
+    width: 1030px;
+    height: 400px;
+    left: 0px;
+    top: -20px;
+
+    background: #FFFFFF;
+
+    box-shadow: 2px 2px 8px rgba(232, 239, 244, 0.8);
+    border-radius: 16px;
+}

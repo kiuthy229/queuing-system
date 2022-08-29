@@ -144,3 +144,26 @@ tr:only-child td:first-child{
 tr:only-child td:last-child {
       border-radius: 0 0 15px 0;
 }
+.add-device{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 12px 4px;
+
+    position: relative;
+    width: 80px;
+    height: 94px;
+    top: -220px;
+    left: 980px;
+
+    background: #FFF2E7;
+    color:#FF9138;
+
+    box-shadow: 0px 0px 6px #E7E9F2;
+    border-radius: 8px 0px 0px 8px;
+    border: none;
+}
+.add-icon{
+    position: relative;
+}
